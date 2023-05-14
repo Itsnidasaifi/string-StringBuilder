@@ -1,0 +1,27 @@
+public class StringBuilder {
+    public static void main(String[] args) {
+        String a="nida";
+        String b="nida";
+        System.out.println(a==b);///the ouptput will give u true value
+        // bcs both references  a  and b are pointing to the same String
+        //the two concepts works here that the strings are immutable in java
+        // bcs for the security reasons
+        //if the String are immutable then it means we will not be able to update the value or to change it
+        // so the answer is no.bcs y r u updating just make a new 0bject that is it
+        //lets understand how it works
+
+         a ="hello";
+         System.out.println(a);
+         //here u can see the o/p will be hello it means now "the reference variable a is pointing to the 
+         //string value hello not nida"
+         String name1=new String("bulbul");
+         String name2=new String("bulbul");
+         System.out.println(name1==name2);
+         // now u can see that the above will give false
+         // means the name1 & name2 aren't  pointing to the same String
+         //so the concept of(.equals )comes into picture
+         System.out.println(name1.equals(name2));
+         // this will give true bcs they are only checking the values of both name1 and name2
+    }
+    
+}
